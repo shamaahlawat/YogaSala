@@ -1,0 +1,99 @@
+@import "../../../../data/assets/style/index.scss";
+
+.CarousalSection {
+    font-family: $poiret;
+    min-height: 300px;
+
+    &.mainCarousal {
+        height: 100%;
+
+        .mainImage {
+            min-height: 380px;
+            height: auto;
+            width: 100vw !important;
+            max-width: 100vw !important;
+        }
+
+        .textSection {
+            z-index: 1;
+            width: 50%;
+            top: 0;
+            bottom: 0;
+            left: 0;
+
+            .lineOne {
+                font-size: 80px;
+                letter-spacing: -0.1px;
+                color: $primary;
+            }
+
+            .lineTwo {
+                font-size: 37px;
+                letter-spacing: -0.1px;
+                color: #f0b41c;
+            }
+        }
+    }
+
+    &.testimonialCarousal {
+        background-image: url("../../data/assets/img/testimonial.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        .testimonialItem {
+            height: 100%;
+
+            .statement {
+                max-width: 80%;
+                font-family: $font-josefin;
+                font-size: 20px;
+                letter-spacing: -0.1px;
+                color: #030303;
+            }
+
+            .user {
+                font-size: 22px;
+
+                .profile {
+                    width: 85px;
+                    height: 85px;
+                    border-radius: 50%;
+                    background-size: cover;
+                }
+
+                .display {
+                    font-family: $font-josefin;
+                    letter-spacing: -0.1px;
+                    color: $black;
+                    line-height: 1;
+
+                    &.profession {
+                        font-size: 0.8em;
+                    }
+                }
+            }
+        }
+
+        .carousel.carousel-slider {
+            .slide {
+                background: transparent !important;
+            }
+
+            .control-arrow:hover {
+                background: transparent;
+            }
+        }
+    }
+
+    &.mobile {
+        &.mainCarousal {
+            .textSection {
+                left: 20px;
+
+                .lineOne, .lineTwo {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}

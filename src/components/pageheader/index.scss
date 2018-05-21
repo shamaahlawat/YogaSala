@@ -1,0 +1,12 @@
+.pageHeader {
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+
+@media only screen and (max-width: 767px) {
+    .pageHeader {
+        height: 200px;
+    }
+}

@@ -1,0 +1,89 @@
+@import "../../data/assets/style/index.scss";
+
+.EventCard {
+    max-height: 500px;
+    max-width: 300px;
+    min-width: 200px;
+
+    // min-height: 400px;
+    position: relative;
+    top: 0px;
+    overflow: hidden;
+
+    .ant-card-body {
+        padding: 0px !important;
+    }
+
+    .imageContainer {
+        height: 240px;
+
+        .coverPic {
+            height: 100%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    }
+
+    .cardContent {
+        font-family: $font-josefin;
+        background: $white;
+        z-index: 0;
+
+        .title {
+            text-align: left;
+            font-size: 20px;
+            font-weight: 600;
+            letter-spacing: -0.1px;
+            color: $black;
+        }
+
+        .description {
+            display: block;
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: -0.1px;
+            color: $light-grey;
+
+            p {
+                max-height: 17px;
+                overflow: hidden;
+            }
+        }
+
+        .caption {
+            border-top: solid 1px #979797;
+            margin-bottom: 30px;
+
+            .moreDetails {
+                color: $primary;
+                font-weight: 600;
+                font-size: $font-size-md;
+            }
+        }
+
+        &.overlay {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 240px;
+            width: 100%;
+            height: 100%;
+            transition: 0.5s ease-in;
+            cursor: pointer;
+        }
+    }
+
+    &:hover {
+        .overlay {
+            z-index: 1;
+            height: 100%;
+            top: 0;
+            visibility: visible;
+        }
+    }
+
+    @media only screen and (max-width: 767px) {
+        max-width: 400px;
+    }
+}

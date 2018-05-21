@@ -1,0 +1,108 @@
+@import "../../data/assets/style/index.scss";
+
+.serviceContainer {
+    .background {
+        background-image: url("../../data/assets/img/serviceBackground.png");
+        min-height: 90vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
+        .services {
+            font-family: $font-josefin;
+            font-size: $font-size-sm;
+            font-weight: bold;
+            letter-spacing: -0.1px;
+            color: $black;
+        }
+    }
+
+    .heading {
+        font-size: 50px !important;
+        color: $white;
+        line-height: 41px !important;
+        margin-top: 40px;
+    }
+
+    .ourOfferings {
+        .serviceBannerContainer {
+            .bannerElements {
+                font-family: $poiret;
+                font-size: 28px;
+                color: #000000;
+
+                .bannerElements {
+                    &:hover {
+                        font-size: 35px;
+                        font-weight: 600;
+                    }
+                }
+            }
+
+            .active {
+                font-family: $poiret;
+                font-size: 35px !important;
+                color: #000000 !important;
+                font-weight: 600 !important;
+            }
+        }
+    }
+
+    .ant-tabs-bar {
+        padding: 0 100px;
+        background-color: #fdcf87;
+        margin-bottom: 0px !important;
+        border-bottom: 0px !important;
+    }
+
+    .ant-tabs-nav {
+        font-size: 28px !important;
+
+        .ant-tabs-tab {
+            &:hover {
+                color: black;
+            }
+        }
+
+        .ant-tabs-tab-active {
+            font-size: 35px !important;
+            color: #000000 !important;
+            font-weight: 600 !important;
+        }
+    }
+
+    @media only screen and (max-width: 767px) {
+        .background {
+            min-height: 500px;
+            background-size: cover;
+
+            .services {
+                font-size: 10px;
+            }
+        }
+
+        .ant-tabs-bar {
+            padding: 0;
+        }
+
+        .heading {
+            font-size: 30px !important;
+            text-align: center;
+            padding: 12px 0;
+        }
+
+        .serviceBannerContainer {
+            margin-bottom: 15px !important;
+
+            .bannerElements {
+                // overflow-x: scroll;
+                font-size: 18px !important;
+                padding: 0px;
+            }
+        }
+
+        .yogaServices {
+            justify-content: space-between !important;
+        }
+    }
+}

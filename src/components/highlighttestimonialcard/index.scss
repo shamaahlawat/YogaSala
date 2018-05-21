@@ -1,0 +1,94 @@
+@import "../../data/assets/style/index.scss";
+
+.HighlightTestimonialCard {
+    width: 100%;
+    max-width: 300px;
+    min-width: 270px;
+
+    .ant-card-body {
+        padding: 0px !important;
+    }
+
+    .imageContainer {
+        .coverPic {
+            background-size: cover;
+            height: 270px;
+            background-repeat: no-repeat;
+            border-top-right-radius: 6px;
+            border-top-left-radius: 6px;
+            background-position: center;
+        }
+
+        .videoContainer {
+            video {
+                visibility: hidden;
+                height: 0;
+            }
+
+            .thumb {
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+                background: $primary;
+            }
+
+            &:hover .thumb {
+                transform: scale(1.1);
+            }
+        }
+    }
+
+    .cardContent {
+        font-family: $font-josefin;
+        background: $white;
+        z-index: 0;
+
+        .title {
+            height: 150px;
+            overflow: auto;
+        }
+
+        .userContainer {
+            .profile {
+                width: 60px;
+                height: 60px;
+                background-size: cover;
+                border-radius: 50%;
+            }
+
+            .nameSection {
+                font-size: $font-size-md;
+                font-weight: 300;
+                letter-spacing: -0.1px;
+                line-height: 1.05;
+                color: $black;
+                opacity: 0.7;
+
+                .time {
+                    font-size: 0.9em;
+                }
+            }
+        }
+    }
+    @media only screen and (max-width: 768px) {
+        max-width: 400px;
+    }
+}
+
+.videoModal {
+    .ant-modal-body {
+        padding: 0px !important;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .videoModal {
+        .ant-modal-body {
+            width: auto;
+
+            video {
+                width: 720px;
+            }
+        }
+    }
+}

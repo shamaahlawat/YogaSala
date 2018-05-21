@@ -1,0 +1,73 @@
+@import "../../../../data/assets/style/index.scss";
+
+.SusbscribeSection {
+    font-family: $font-josefin;
+    background-color: $grey;
+
+    .content {
+        max-width: 800px;
+    }
+
+    .yogaUpdates {
+        .newsletter {
+            font-size: 30px;
+            letter-spacing: -0.1px;
+            color: $black;
+        }
+
+        .monthlyUpdates {
+            font-size: 18px;
+            letter-spacing: -0.1px;
+            color: #aaaaaa;
+            text-align: left;
+        }
+
+        .inputBox {
+            width: 100%;
+                
+            input {
+                min-width: 200px;
+                color: #d7d7d7;
+                min-width: 200px;
+                height: 40px !important;
+                border-radius: 28px;
+                background-color: #fff;
+                color: #d7d7d7;
+            }
+
+            .button {
+                height: 40px;
+                width: 40px;
+                padding: 10px;
+                background-color: #bc9050;
+                border-radius: 50%;
+                margin-left: 10px;
+
+                &:hover {
+                    opacity: 0.9;
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-width: 767px) {
+        .yogaUpdates {
+
+            .newsletter {
+                font-size: 18px;
+            }
+
+            .monthlyUpdates {
+                font-size: $font-size-sm;
+                text-align: center;
+            }
+
+            input {
+                font-size: $font-size-sm;
+            }
+        }
+    }
+}
+
+
+

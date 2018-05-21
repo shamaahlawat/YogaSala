@@ -1,0 +1,77 @@
+@import "../../data/assets/style/index.scss";
+
+.eventContainer {
+    .background {
+        background-image: url("../../data/assets/img/image.png");
+        min-height: 92vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        .yogaInspiration {
+            .yogaBegins {
+                font-family: $poiret;
+                font-size: 55px;
+                line-height: 1.01;
+                letter-spacing: -0.1px;
+
+                .inspiration {
+                    color: $primary;
+                }
+
+                .begin {
+                    color: #f4b414;
+                }
+
+                &.flex-row {
+                    .begin {
+                        margin-left: 15px;
+                    }
+                }
+            }
+
+            .aboutYoga span {
+                font-family: $font-josefin;
+                font-size: 18px;
+                font-weight: 300;
+                letter-spacing: 0px;
+                color: $black;
+                padding: 10px;
+            }
+
+            .button {
+                border-radius: 26px;
+                background-color: $yellow;
+                box-shadow: 0 2px 4px 0 rgba(137, 137, 137, 0.5);
+                font-size: 20px;
+                line-height: 1;
+                padding: 10px 15px;
+                color: #464646;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: orange;
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-width: 767px) {
+        .background {
+            min-height: auto;
+        }
+
+        .yogaInspiration {
+            .yogaBegins {
+                font-size: 20px !important;
+            }
+
+            .aboutYoga {
+                margin-top: 311px !important;
+            }
+
+            .aboutYoga span {
+                font-size: 14px !important;
+            }
+        }
+    }
+}

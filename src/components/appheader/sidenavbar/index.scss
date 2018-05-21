@@ -1,0 +1,67 @@
+@import "../../../data/assets/style/index.scss";
+
+.sideNavbarContainer {
+    cursor: pointer;
+
+    .bm-burger-button {
+        top: 15px;
+        left: 15px;
+        height: 50px;
+        width: 50px;
+
+        .bm-icon {
+            display: flex;
+            color: #fff;
+            font-size: 40px;
+            color: #fff;
+            margin-top: 10px;
+
+            .material-icons {
+                font-size: 45px;
+            }
+        }
+    }
+
+    .bm-menu-wrap {
+        top: 0;
+        right: 0;
+
+        .bm-menu {
+            background: $primary;
+
+            .bm-item-list {
+                .sideBarContent {
+                    height: 100%;
+                    min-height: 100vh;
+
+                    .menulist {
+                        padding-top: 30px;
+
+                        .link {
+                            font-size: 18px;
+                            padding: 15px;
+                            cursor: pointer;
+                            float: right;
+                            text-align: right;
+                            clear: both;
+
+                            &.active {
+                                border-bottom: 2px solid #fff;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .bm-cross-button {
+            height: 24px;
+            width: 24px;
+
+            .bm-cross {
+                background-color: #fff;
+                height: 16px !important;
+            }
+        }
+    }
+}

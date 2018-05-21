@@ -1,0 +1,105 @@
+@import "../../data/assets/style/index.scss";
+
+.BookTicketsContainer {
+    .userDetails {
+        border: 2px solid hsl(235, 28%, 37%);
+        margin-bottom: 50px;
+
+        .eventsList {
+            .eventTicket {
+                border-bottom: 2px solid #757575;
+
+                .eventDetail {
+                    .eventDate {
+                        font-family: $font-josefin;
+                        font-size: 13px;
+                        font-weight: 600;
+                        color: #757575;
+                    }
+
+                    .eventName {
+                        font-family: $font-josefin;
+                        font-size: 30px;
+                        color: #45497a;
+                    }
+                }
+
+                .eventPrice {
+                    .circle {
+                        width: 20px;
+                        border-radius: 50%;
+                        height: 20px;
+                        background-color: rgba(58, 85, 159, 0.4);
+                        cursor: pointer;
+                    }
+
+                    .addTickets {
+                        display: none;
+                    }
+                }
+
+                .button {
+                    background-color: $primary;
+                    font-family: $font-josefin;
+                    font-size: 12px;
+                    color: $white;
+                }
+            }
+        }
+
+        .checkoutForm {
+            .moreEvent {
+                font-family: $font-josefin;
+                font-size: 14px;
+                color: $white;
+                // background-color: #45497a;
+                background-color: #673BB7;
+                padding: 8px;
+                cursor: pointer;
+            }
+
+            label,
+            .textStyle {
+                font-family: $font-josefin;
+                font-size: 14px;
+                font-weight: 300;
+                color: #1d1d1d;
+            }
+
+            .form-control,
+            .ant-input-group-addon {
+                border: solid 3px #ffffff !important;
+                background: #ebecf1 !important;
+
+                &:focus {
+                    box-shadow: none;
+                }
+            }
+
+            .ant-input-group-addon {
+                border-right-color: #ebecf1 !important;
+            }
+        }
+
+        .total {
+            text-align: right;
+
+            .span {
+                color: #1d1d1d;
+            }
+        }
+    }
+
+    .errorContainer {
+        padding: 50px 10px;
+        min-height: 300px;
+    }
+
+    @media only screen and (max-width: 767px) {
+        .eventsList {
+            .eventName {
+                font-size: 16px;
+            }
+        }
+    }
+}

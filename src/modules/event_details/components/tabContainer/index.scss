@@ -1,0 +1,91 @@
+// $font-josefin
+@import "../../../../data/assets/style/index.scss";
+
+.tabContainer {
+    font-family: $font-josefin;
+
+    .ant-tabs-nav .ant-tabs-tab {
+        font-family: $font-josefin;
+        font-size: 20px;
+        letter-spacing: -0.1px;
+        color: #757575;
+    }
+
+    .ant-tabs-nav .ant-tabs-tab-active {
+        color: #45497a;
+        border-bottom: 4px solid #45497a !important;
+    }
+
+    .ant-tabs {
+        font-family: $font-josefin;
+        font-size: 18px;
+        font-weight: 300;
+    }
+
+    .ant-tabs-tabpane {
+        margin-top: 30px;
+    }
+
+    .ant-tabs-bar {
+        display: flex;
+        justify-content: center;
+    }
+
+    .mapSection {
+        iframe {
+            width: 100%;
+        }
+    }
+
+    .venueDetails {
+        font-family: $font-josefin;
+        font-size: 18px;
+        color: black;
+    }
+
+    .eventTitle {
+        font-size: 35px;
+        color: #45497a;
+        font-family: $font-josefin;
+    }
+
+    .eventDescription {
+        font-family: $font-josefin;
+    }
+
+    .eventLocation {
+        white-space: pre-line;
+    }
+
+    .tableSection {
+        .ant-table-wrapper {
+            width: 100%;
+
+            th {
+                background: rgba(0, 0, 0, 0.05);
+                font-family: $font-josefin !important;
+            }
+
+            .ant-table-row {
+                font-family: $font-josefin !important;
+
+                &:hover {
+                    td {
+                        background: transparent;
+                    }
+                }
+
+                td {
+                    .tableAction {
+                        color: $primary;
+
+                        &:hover {
+                            color: #fff;
+                            text-shadow: 1px 1px grey;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,187 @@
+@import "../../data/assets/style/index.scss";
+
+.appHeaderContainer {
+    z-index: 1;
+    position: fixed !important;
+    width: 100%;
+    background-color: $primary !important;
+    border: $primary !important;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.1);
+    color: $white !important;
+
+    .logo {
+        position: absolute;
+        max-height: 75px;
+        top: 15px;
+        box-shadow: 0 2px 4px 0 rgba(87, 87, 87, 0.5);
+    }
+
+    .linkContainer {
+        max-width: calc(100vw - 150px);
+
+        .link {
+            border-bottom: 3px solid $primary !important;
+            font-size: 12px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+
+            &:after {
+                content: "\2022";
+                font-size: 20px;
+                padding: 0 10px;
+            }
+
+            &:before {
+                content: "";
+                padding: 0 10px;
+            }
+
+            &.active, &:hover {
+                border-color: $yellow !important;
+                background-color: $primary !important;
+            }
+
+            &.ant-dropdown-link {
+                line-height: 2.5;
+
+                &:after {
+                    content: "";
+                }
+            }
+        }
+    }
+}
+
+.navbarDropdownMenuContainer {
+    .ant-menu {
+        background: $primary;
+        color: #fff;
+    }
+}
+
+.ant-modal {
+    font-family: $font-josefin;
+    font-size: 30px !important;
+    line-height: 1.33;
+    text-align: center;
+    color: #45497a;
+    top: 30px !important;
+    padding-bottom: 0px !important;
+
+    .ant-modal-title {
+        font-size: 30px;
+    }
+
+    .modal-title p {
+        font-family: $poiret;
+        font-size: 30px !important;
+        line-height: 1.33;
+        text-align: center;
+        color: $primary !important;
+    }
+
+    .modalParagraph {
+        font-size: 30px !important;
+    }
+
+    .inputContainer {
+        border-radius: 5px;
+        background-color: #ffffff;
+        box-shadow: 0 2px 9px 0 rgba(0, 0, 0, 0.1);
+        border: solid 1px rgba(31, 43, 68, 0.3);
+        line-height: 2.22;
+        letter-spacing: 0.5px;
+        text-align: center;
+        color: rgba(117, 117, 117, 0.5);
+
+        input {
+            border: none !important;
+            font-size: 18px !important;
+            box-shadow: none !important;
+
+            &:focus {
+                outline: none !important;
+                box-shadow: none !important;
+            }
+        }
+    }
+
+    .or {
+        font-size: 18px;
+        color: #757575;
+        margin: 0 20px;
+    }
+
+    .button {
+        border-radius: 5px;
+        background-color: rgba(117, 117, 117, 0.2);
+        font-size: 18px;
+        text-align: center;
+        color: #757575;
+    }
+
+    .loginBtn {
+        border-radius: 5px;
+        background-color: #ffffff;
+        padding: 0 30px;
+        font-size: 20px;
+    }
+
+    .rightBorder {
+        border-right: 1px solid black !important;
+    }
+
+    .loginWithFacebook {
+        border: solid 1px #4069ac;
+        background: #395696;
+        color: white;
+    }
+
+    .loginWithgoogle {
+        border: solid 1px #ef403b;
+        color: white;
+        background: #f14339;
+    }
+
+    .border-radius-5 {
+        border-radius: 5px;
+    }
+
+    .ant-modal-header {
+        border-bottom: none !important;
+    }
+
+    .commonHeight {
+        height: 52px !important;
+    }
+
+    .loginSignup {
+        font-family: $poiret;
+        font-size: 30px;
+        line-height: 1.33;
+        letter-spacing: 0.8px;
+        text-align: center;
+        color: #45497a;
+        padding: 10px;
+        width: 50%;
+    }
+
+    .yellowBorder {
+        font-weight: $font-bold;
+        border-bottom: solid 2px #fdcf87;
+    }
+
+    .greyBorder {
+        border-bottom: solid 1px #d1d4d9;
+        width: 190px;
+    }
+
+    .ant-input {
+        border: none !important;
+        font-size: 18px !important;
+    }
+}
+
+.borderNone {
+    border: none !important;
+}

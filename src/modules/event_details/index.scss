@@ -1,0 +1,97 @@
+@import "../../data/assets/style/index.scss";
+
+.eventsContainer {
+    background: white;
+    font-family: $font-josefin;
+
+    .eventDetailsContainer {
+        background: white;
+    }
+
+    .eventBackgroundImage {
+        height: 400px;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .topMargin {
+        margin-top: -90px;
+    }
+
+    .imageContainer {
+        border: solid 7px #ffffff;
+
+        img {
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+    .hashTagPills {
+        border-radius: 13.5px;
+        border: none;
+        background-color: #d8d8d8;
+        font-size: 13px;
+        letter-spacing: -.1px;
+        color: #45497a;
+        padding: 5px 20px;
+    }
+
+    .eventName {
+        font-size: 35px;
+        font-weight: 600;
+        color: white;
+        letter-spacing: -0.1px;
+        text-shadow: 1px 1px 2px white;
+    }
+
+    .time {
+        font-size: 16px;
+        font-weight: 600;
+        letter-spacing: -0.1px;
+        border-radius: 4px;
+        background-color: #d8d8d8;
+        padding: 10px 28px;
+        color: $primary;
+    }
+
+    .description {
+        font-size: 20px;
+        letter-spacing: -0.1px;
+        color: #ababab;
+    }
+
+    .registerButton {
+        font-size: 14px;
+        letter-spacing: -0.1px;
+        background: #45497a;
+        color: white;
+        padding: 10px;
+        max-width: 160px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    @media only screen and (max-width: 767px) {
+        .eventName {
+            font-size: 25px;
+            margin: 20px 0;
+            color: #45497a;
+        }
+
+        .time {
+            font-size: 14px;
+        }
+
+        .description {
+            font-size: 20px;
+        }
+
+        .registerButton {
+            font-size: 12px;
+            max-width: 150px;
+            margin-top: 10px;
+        }
+    }
+}

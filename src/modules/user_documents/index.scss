@@ -1,0 +1,61 @@
+@import "../../data/assets/style/index.scss";
+
+.userDocumentsContainer {
+    background: #ebecf1;
+
+    .section {
+        .sectionHeader {
+            font-weight: 200;
+            font-size: 30px;
+        }
+
+        &.folderSection {
+            .folderList {
+                .folder {
+                    border: 2px solid $white;
+
+                    .icon {
+                        width: 30px;
+                        height: 30px;
+                    }
+
+                    &.active {
+                        border-color: #6793d5;
+                    }
+                }
+            }
+        }
+
+        &.tableSection {
+            .ant-table-wrapper {
+                width: 100%;
+
+                th {
+                    background: rgba(0, 0, 0, 0.05);
+                    font-family: $font-josefin !important;
+                }
+
+                .ant-table-row {
+                    font-family: $font-josefin !important;
+
+                    &:hover {
+                        td {
+                            background: transparent;
+                        }
+                    }
+
+                    td {
+                        .tableAction {
+                            color: $primary;
+
+                            &:hover {
+                                color: #fff;
+                                text-shadow: 1px 1px grey;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

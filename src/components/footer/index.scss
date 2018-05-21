@@ -1,0 +1,74 @@
+@import "../../data/assets/style/index.scss";
+
+.footerContainer {
+    background-color: #313131;
+    min-height: 491px;
+
+    .footer {
+        min-height: 473px;
+        justify-content: space-evenly;
+
+        .circle {
+            width: 4px;
+            height: 4px;
+            border-radius: 50px;
+            background-color: $white;
+            margin-top: 3px;
+        }
+
+        .item {
+            font-family: $font-josefin;
+            font-size: $font-size-xs;
+            font-weight: bold;
+            letter-spacing: -0.1px;
+            color: $white;
+            opacity: 0.7;
+            margin-top: 5px;
+
+            &:hover {
+                opacity: 1;
+                transform: scale(1.1);
+            }
+        }
+
+        .copyRight {
+            opacity: 0.19;
+            font-family: $font-josefin;
+            font-size: $font-size-xs;
+            letter-spacing: -0.1px;
+            color: $white;
+        }
+
+        .socialMedia {
+            .socialContainer {
+                background: $white;
+                width: 40px;
+                height: 40px;
+                margin: 5px;
+
+                &:hover {
+                    &.facebook {
+                        background: $facebook-color;
+                    }
+
+                    &.instagram {
+                        background: $instagram-color;
+                    }
+
+                    &.twitter {
+                        background: $twitter-color;
+                    }
+
+                    .socialIcon {
+                        color: #fff;
+                    }
+                }
+
+                .socialIcon {
+                    font-size: 20px;
+                    color: #313131;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,84 @@
+@import "../../data/assets/style/index.scss";
+
+.EventTestimonialCard {
+    .imageContainer {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .detailsContainer {
+        width: 50%;
+        background: $white;
+        min-height: 450px;
+
+        .content {
+            font-family: $font-josefin;
+
+            .title {
+                font-size: 35px;
+                letter-spacing: -0.1px;
+                color: $primary;
+            }
+
+            .description {
+                display: block;
+                font-size: $font-size-sm;
+                letter-spacing: -0.1px;
+                color: #757575;
+            }
+
+            .caption {
+                border-top: solid 2px $primary;
+            }
+        }
+
+        .testimonial {
+            background-color: $yellow;
+
+            .profile {
+                margin: 20px;
+                background-repeat: no-repeat;
+                background-size: cover;
+                min-width: 70px;
+                min-height: 70px;
+                border-radius: 50%;
+            }
+
+            .testimonialText {
+                font-family: $font-josefin;
+                font-size: $font-size-sm;
+                letter-spacing: -0.1px;
+                color: $black;
+            }
+        }
+
+        .buttonContainer {
+            .register {
+                font-family: $font-josefin;
+                background-color: $primary;
+                padding: 20px;
+                width: 153px;
+                height: 35px;
+                color: $white;
+                font-size: $font-size-sm;
+
+                &:hover {
+                    opacity: 0.9;
+                }
+            }
+        }
+    }
+
+    &.mobile {
+        .imageContainer {
+            min-height: 350px;
+            order: 0 !important;
+        }
+
+        .detailsContainer {
+            width: 100%;
+            min-height: auto;
+        }
+    }
+}

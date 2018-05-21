@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>YogaSala- All about Yogasala</title>
+    <meta charset="utf-8" />
+    <!-- <meta name="keywords" content="poletalks, Pole app, Anonymous, Polls, Location, heatmap, ATM, Locator,Cash,Cash No Cash, Walnut,ATMwithcash,demonetisation,cashchaos,befikre,Pole kar,Pole it,modi,currency,500 note,2000 note,poletalks map,bulletin,Find ATM nearby, pole,Location based posts,Where can i go,Anonymous local platform,Location based Social Networking,Local news,Location Based app,Social Feed Around me,People around me,social secrets,Instant Review of places,Places around me,Nearby people,anonymous chat,find friends nearby,Nearby places,instant reaction"
+    /> -->
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0"
+    />
+
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" charset="UTF-8" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
+    />
+</head>
+
+<body>
+    <div id="app"></div>
+
+    <script>
+        window.fbAsyncInit = function () {
+            FB.init({
+                appId: '1027290357420041',
+                cookie: true,
+                xfbml: true,
+                version: 'v2.12'
+            });
+            FB.AppEvents.logPageView();
+        };
+
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) { return; }
+            js = d.createElement(s); js.id = id;
+            js.src = "https://connect.facebook.net/en_US/sdk.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+    <script>
+        window.gpAsyncInit = function () {
+            gapi.auth.authorize({
+                immediate: true,
+                response_type: 'code',
+                cookie_policy: 'single_host_origin',
+                client_id: 'YOUR_CLIENT_ID',
+                scope: 'email profile'
+            }, function (response) {
+                return;
+            });
+        };
+
+        (function (d, s, id) {
+            var js, gjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) { return; }
+            js = d.createElement(s); js.id = id;
+            js.src = "https://apis.google.com/js/client:plus.js?onload=gpAsyncInit";
+            gjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'google_oauth2-jssdk'));
+    </script>
+
+    <script>
+        function openPaymentPage(data, callback) {
+            var options = {
+                "key": "rzp_test_SHentFJ2jBqiOi", //test
+                // "key": "rzp_live_Nud13N537pCqmZ", //live
+                "amount": data.total * 100, // 2000 paise = INR 20
+                "name": "yogasala",
+                "description": data.total_count + " items payment",
+                "image": "https://res.cloudinary.com/poletalks/image/upload/v1525968080/yogasala/logo1.jpg",
+                "handler": function (response) {
+                    callback(response);
+                },
+                "prefill": {
+                    "email": data.email,
+                    "contact": data.phone
+                },
+                "notes": {
+                },
+                "theme": {
+                    "color": "#F37254"
+                }
+            };
+
+            var rzp1 = new Razorpay(options);
+            rzp1.open();
+        }
+    </script>
+    <script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyCchfj2QcIk4ScKAGVeVe6aWR5MJzLgRHI&libraries=places,drawing,geometry'></script>
+</body>
+
+</html>

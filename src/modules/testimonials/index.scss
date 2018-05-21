@@ -1,0 +1,48 @@
+@import "../../data/assets/style/index.scss";
+
+.testimonialsContainer {
+    padding-top: 0px !important;
+
+    .heading {
+        font-family: $poiret;
+        font-size: 30px !important;
+        color: $primary;
+    }
+
+    .border {
+        border: 1px solid $instagram-color;
+
+        &.FACEBOOK {
+            border-color: $facebook-color;
+        }
+
+        &.TWITTER {
+            border-color: $twitter-color;
+        }
+
+        &.INSTAGRAM {
+            border-color: $instagram-color;
+        }
+    }
+
+    .button {
+        background: $primary;
+        color: $white;
+        font-family: $font-josefin;
+        font-size: $font-size-sm;
+    }
+
+    @media only screen and (max-width: 767px) {
+        .background {
+            background-repeat: no-repeat;
+            height: 150px;
+            background-size: cover;
+            background-position: right;
+        }
+
+        .heading {
+            font-size: 22px !important;
+            text-align: center;
+        }
+    }
+}

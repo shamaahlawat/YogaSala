@@ -1,0 +1,20 @@
+@import "../data/assets/style/index.scss";
+
+.mainContainer {
+    .appHeaderContainer {
+        z-index: 1;
+    }
+
+    .contentContainer {
+        z-index: 0;
+
+        .heading {
+            font-family: $poiret;
+            font-size: 60px;
+            letter-spacing: -0.1px;
+            color: $primary;
+            margin-bottom: 15px;
+            line-height: 1.05;
+        }
+    }
+}

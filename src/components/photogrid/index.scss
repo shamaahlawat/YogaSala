@@ -1,0 +1,84 @@
+@import "../../data/assets/style/index.scss";
+
+.galleryContainer {
+    max-width: 90%;
+
+    .image {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+
+        &.imageSection {
+            height: 150px;
+            width: 200px;
+        }
+
+        &.mainImage {
+            min-height: 350px;
+            max-width: 40%;
+        }
+    }
+
+    .play {
+        padding: 10px;
+        border-radius: 50%;
+        background: $primary;
+    }
+
+    .modal-content {
+        .mediaContainer {
+            .imageContainer {
+                width: 100%;
+
+                img, video {
+                    width: 100%;
+                    max-width: 100%;
+                    height: auto;
+                }
+            }
+
+            .description {
+                white-space: pre-line;
+            }
+        }
+    }
+}
+
+.modal-content {
+    .mediaContainer {
+        .imageContainer {
+            width: 100%;
+
+            img, video {
+                width: 100%;
+                max-width: 100%;
+                height: auto;
+            }
+        }
+
+        .description {
+            white-space: pre-line;
+        }
+    }
+
+    .ant-modal-close-x {
+        margin-top: -14px !important;
+        margin-right: -6px !important;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .galleryContainer {
+        .allImages {
+            justify-content: center;
+        }
+
+        .image {
+            &.imageSection {
+                height: 152px;
+                width: 163px;
+            }
+        }
+    }
+}

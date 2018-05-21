@@ -1,0 +1,54 @@
+@import "../../../../data/assets/style/index.scss";
+
+.newsSection {
+    background: $grey;
+
+    .advertiser {
+        background-repeat: no-repeat;
+        background-position: center;
+        min-width: 150px;
+        max-width: 180px;
+        min-height: 60px;
+        cursor: pointer;
+    }
+
+    .usa {
+        background-image: url("https://res.cloudinary.com/poletalks/image/upload/v1519578671/yogasala/company1.png");
+    }
+
+    .fortune {
+        background-image: url("https://res.cloudinary.com/poletalks/image/upload/v1519578671/yogasala/company5.png");
+    }
+
+    .verbes {
+        background-image: url("https://res.cloudinary.com/poletalks/image/upload/v1519578671/yogasala/company1.png");
+    }
+
+    .brite {
+        background-image: url("https://res.cloudinary.com/poletalks/image/upload/v1519578671/yogasala/company3.png");
+    }
+
+    .forbes {
+        background-image: url("https://res.cloudinary.com/poletalks/image/upload/v1519578671/yogasala/company4.png");
+    }
+
+    .usa:hover {
+        background-image: url("https://res.cloudinary.com/poletalks/image/upload/v1519578671/yogasala/company4.png");
+    }
+
+    .fortune:hover {
+        background-image: url("https://res.cloudinary.com/poletalks/image/upload/v1519578671/yogasala/company1.png");
+    }
+
+    .verbes:hover {
+        background-image: url("https://res.cloudinary.com/poletalks/image/upload/v1519578671/yogasala/company3.png");
+    }
+
+    .brite:hover {
+        background-image: url("https://res.cloudinary.com/poletalks/image/upload/v1519633252/yogasala/company6.png");
+    }
+
+    .forbes:hover {
+        background-image: url("https://res.cloudinary.com/poletalks/image/upload/v1519578671/yogasala/company3.png");
+    }
+}

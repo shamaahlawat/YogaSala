@@ -1,0 +1,118 @@
+@import "../../data/assets/style/index.scss";
+
+.ant-btn-primary {
+    background-color: #45497a !important;
+    border: none !important;
+}
+
+.ant-btn-primary:hover {
+    opacity: 0.9;
+}
+
+.contactContainer {
+    background-color: #ebecf1;
+
+    .heading {
+        font-size: 35px !important;
+        text-align: center;
+    }
+
+    .locationContainer {
+        overflow: hidden;
+
+        .textStyle {
+            font-family: $font-josefin;
+            font-size: $font-size-sm;
+            color: $primary;
+        }
+    }
+
+    .bookAppointment {
+        background-color: #fecc7f;
+        padding: 50px;
+        font-family: $font-josefin;
+        font-size: 40px;
+        letter-spacing: -0.1px;
+        color: $primary;
+
+        .answer {
+            font-size: 20px;
+        }
+
+        .button {
+            padding: 18px;
+            height: 41px;
+            background-color: $primary;
+            font-size: $font-size-sm;
+            color: $white;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            opacity: 0.9;
+        }
+    }
+
+    .contactForm {
+        label {
+            font-family: $font-josefin;
+            font-size: 14px;
+            color: #45497a;
+            font-weight: normal;
+        }
+
+        .form-control {
+            border: solid 3px #ffffff !important;
+            background: $grey !important;
+        }
+
+        textarea {
+            width: 100% !important;
+            background: $grey;
+            border: solid 3px #ffffff !important;
+        }
+
+        .button {
+            background: $primary;
+            color: $white;
+            font-family: $font-josefin;
+            font-size: $font-size-sm;
+        }
+
+        .button:hover {
+            opacity: 0.9;
+        }
+
+        .button:focus {
+            background-color: purple;
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .contactContainer {
+        .heading {
+            text-align: center;
+            margin-top: 0px;
+            font-size: 22px !important;
+        }
+
+        .contactForm {
+            margin-top: 40px;
+        }
+
+        .bookAppointment {
+            text-align: center;
+            padding: 20px;
+            font-size: 20px;
+
+            .answer {
+                font-size: $font-size-xs;
+            }
+
+            .button {
+                font-size: $font-size-sm;
+            }
+        }
+    }
+}
